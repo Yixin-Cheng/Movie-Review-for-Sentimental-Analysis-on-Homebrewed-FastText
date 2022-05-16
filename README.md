@@ -1,4 +1,3 @@
-Provided files:
 __settings__.py - sets common settings such as batch size and train/valid/test split.
 
 data_loader.py - contains code for reading in raw text dataset and converting to model-friendly format.
