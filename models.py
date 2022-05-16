@@ -25,7 +25,7 @@ class FastText(nn.Module):
         in the batch.
         """
 
-        # TODO perform embed, aggregate, and linear, then return the predicted class probabilities.
+        # perform embed, aggregate, and linear, then return the predicted class probabilities.
         tensor_outputs=self.embeddings(x)
         tensor_outputs=torch.mean(tensor_outputs, 1)
         return self.W(tensor_outputs)
